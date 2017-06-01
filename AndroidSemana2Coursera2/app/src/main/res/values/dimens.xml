@@ -1,0 +1,8 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="marginleft_til">32dp</dimen>
+    <dimen name="activity_vertical">2dp</dimen>
+    <dimen name="activity_horizontal">2dp</dimen>
+    <dimen name="detalle_margin">16dp</dimen>
+    <dimen name="text_margin">8dp</dimen>
+</resources>

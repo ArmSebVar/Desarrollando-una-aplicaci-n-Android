@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.equipo.androidsemana2coursera.MainActivity"
+    tools:showIn="@layout/activity_main"
+
+    >
+    <LinearLayout
+        android:id="@+id/area_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/activity_vertical"
+        android:paddingLeft="@dimen/activity_horizontal"
+        android:paddingRight="@dimen/activity_horizontal"
+        android:paddingTop="@dimen/activity_vertical"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1"
+        android:layout_alignEnd="@+id/bottom_bar">
+
+        <ImageView
+            android:id="@+id/im_cliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_perm_identity" />
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginleft_til"
+            android:layout_marginStart="@dimen/marginleft_til"
+            android:layout_weight="1.37">
+
+            <EditText
+                android:id="@+id/campo_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/hint_nombre"
+                android:inputType="text"
+                android:maxLines="1" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+<LinearLayout
+    android:id="@+id/area_telefono"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical"
+    android:paddingLeft="@dimen/activity_horizontal"
+    android:paddingRight="@dimen/activity_horizontal"
+    android:paddingTop="@dimen/activity_vertical"
+    android:layout_below="@+id/area_nombre"
+    android:orientation="horizontal"
+    >
+    <ImageView
+        android:id="@+id/img_correo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_call"
+        />
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="244dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginleft_til"
+        android:layout_marginStart="@dimen/marginleft_til"
+        >
+
+        <EditText
+            android:id="@+id/campo_telefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/hint_telefono"
+            android:inputType="phone"
+            />
+    </android.support.design.widget.TextInputLayout>
+</LinearLayout>
+
+<LinearLayout
+    android:id="@+id/area_fecha"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical"
+    android:paddingLeft="@dimen/activity_horizontal"
+    android:paddingRight="@dimen/activity_horizontal"
+    android:paddingTop="@dimen/activity_vertical"
+    android:layout_below="@+id/area_telefono"
+    android:orientation="horizontal"
+    android:weightSum="1"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentStart="true">
+
+    <ImageView
+        android:id="@+id/img_fecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_date_range" />
+
+    <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_fecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginleft_til"
+            android:layout_marginStart="@dimen/marginleft_til"
+        android:layout_weight="1.24">
+
+            <EditText
+                android:id="@+id/campo_fecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/hint_fecha"
+                android:maxLines="1"
+                android:focusable="false"/>
+
+
+        </android.support.design.widget.TextInputLayout>
+
+</LinearLayout>
+
+<LinearLayout
+    android:id="@+id/area_correo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical"
+    android:paddingLeft="@dimen/activity_horizontal"
+    android:paddingRight="@dimen/activity_horizontal"
+    android:paddingTop="@dimen/activity_vertical"
+    android:layout_below="@+id/area_fecha"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/img_telefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_mail_outline"
+        />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_correo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginleft_til"
+        android:layout_marginStart="@dimen/marginleft_til"
+        >
+
+        <EditText
+            android:id="@+id/campo_correo"
+            android:layout_width="258dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/hint_correo"
+            android:inputType="textEmailAddress"
+            android:maxLines="1" />
+    </android.support.design.widget.TextInputLayout>
+</LinearLayout>
+<LinearLayout
+    android:id="@+id/area_descripcion"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/area_correo"
+    android:orientation="horizontal"
+    >
+    <ImageView
+        android:id="@+id/img_descripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_description"
+        />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_descripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginleft_til"
+        android:layout_marginStart="@dimen/marginleft_til">
+
+        <EditText
+            android:id="@+id/campo_descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/hint_descripcion"
+            android:inputType="text"
+            android:maxLines="1"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/boton_aceptar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/colorAccent"
+            android:text="@string/accion_aceptar"
+            android:textColor="@color/blanco" />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.equipo.androidsemana2coursera.DetalleContacto"
+    android:paddingRight="@dimen/detalle_margin"
+    android:paddingTop="@dimen/detalle_margin"
+    android:paddingLeft="@dimen/detalle_margin"
+    android:paddingBottom="@dimen/detalle_margin"
+    >
+
+
+    <TextView
+        android:id="@+id/Titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:text="@string/Titulo"
+        android:textSize="24sp" />
+
+
+    <TextView
+        android:id="@+id/text_View1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Titulo"
+        android:paddingBottom="@dimen/text_margin"
+        android:paddingLeft="@dimen/text_margin"
+        android:paddingRight="@dimen/text_margin"
+        android:paddingTop="@dimen/text_margin"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/text_View5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_View1"
+        android:paddingBottom="@dimen/text_margin"
+        android:paddingLeft="@dimen/text_margin"
+        android:paddingRight="@dimen/text_margin"
+        android:paddingTop="@dimen/text_margin"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/text_View2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_View5"
+        android:paddingBottom="@dimen/text_margin"
+        android:paddingLeft="@dimen/text_margin"
+        android:paddingRight="@dimen/text_margin"
+        android:paddingTop="@dimen/text_margin"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/text_View3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_View2"
+        android:paddingBottom="@dimen/text_margin"
+        android:paddingLeft="@dimen/text_margin"
+        android:paddingRight="@dimen/text_margin"
+        android:paddingTop="@dimen/text_margin"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/text_View4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_View3"
+        android:paddingBottom="@dimen/text_margin"
+        android:paddingLeft="@dimen/text_margin"
+        android:paddingRight="@dimen/text_margin"
+        android:paddingTop="@dimen/text_margin"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/boton_cerrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        tools:layout_editor_absoluteY="202dp"
+        tools:layout_editor_absoluteX="116dp"
+        android:text="@string/Editar_Datos"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/text_View4"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
